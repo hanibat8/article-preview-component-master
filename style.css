@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: initial;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PT Serif', serif;
+	font-weight: 300;
+	line-height: 1.4;
+	background-color: rgb(225, 236, 243);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img {
+	width: 100%;
+}
+
+.card {
+	border-radius: 15px;
+	width: 85%;
+	background-color: #fff;
+	margin: 7rem auto;
+	box-shadow: 0 .3rem .3rem rgba(0, 0, 0, .05);
+	overflow: hidden;
+}
+
+.card__content {
+	padding: 5rem 4rem;
+	padding-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+.card__content-details {
+	display: flex;
+}
+
+.card__content-details-socialmedia {
+	display: none;
+}
+
+.card__content-details-name {
+	margin-right: auto;
+	margin-left: 1.6rem;
+}
+
+.first {
+	font-size: 1.6rem;
+	color: rgba(11, 7, 20, 0.712);
+	font-weight: 700;
+}
+
+.second {
+	color: rgba(86, 85, 90, 0.856);
+}
+
+.card__image {
+	height: 22rem;
+	object-fit: cover;
+	display: block;
+}
+
+.first-para {
+	font-size: 2rem;
+	color: rgba(11, 7, 20, 0.712);
+	font-weight: 700;
+	line-height: 1.4;
+	margin-bottom: 2rem;
+}
+
+.icon {
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 50%;
+	object-fit: cover;
+	display: block;
+	align-self: center;
+}
+
+.share__circle {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	align-self: center;
+	background-color: rgba(223, 220, 235, 0.856);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.second-para {
+	font-size: 1.6rem;
+	color: rgba(86, 85, 90, 0.856);
+	line-height: 1.5;
+	font-weight: 400;
+	margin-bottom: 4rem;
+}
+
+.profile-pic {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	object-fit: cover;
+	display: block;
+}
+
+@media (min-width: 600px) {
+	.card {
+		display: flex;
+		max-width: 95rem;
+	}
+
+	.card__content {
+		flex: 0 1 54%;
+		padding: 3.5rem 4.5rem;
+	}
+
+	.card__image {
+		height: 36rem;
+		object-fit: cover;
+		display: block;
+	}
+
+	.card__img {
+		flex: 0 1 44%;
+	}
+}
